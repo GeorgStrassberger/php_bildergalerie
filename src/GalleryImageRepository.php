@@ -2,6 +2,9 @@
 
 class GalleryImageRepository
 {
+
+    public function __construct(private PDO $pdo){}
+
     public function fetchAll()
     {
         return [

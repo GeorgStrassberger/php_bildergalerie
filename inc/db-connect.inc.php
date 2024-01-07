@@ -11,8 +11,8 @@ catch (PDOException $e){
     die();
 }
 
-// Alle Städte aus der DB laden.
-// $stmt = $pdo->prepare('SELECT * FROM `cities` ORDER BY `id` ASC');
-// $stmt->execute();
+// Alle Bilder aus der DB laden.
+$stmt = $pdo->prepare('SELECT * FROM `images` ORDER BY `id` ASC');
+$stmt->execute();
 
-// $cities = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$imagesDB = $stmt->fetchAll(PDO::FETCH_ASSOC);
