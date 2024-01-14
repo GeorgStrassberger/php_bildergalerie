@@ -1,8 +1,9 @@
 <?php
 require_once(__DIR__ . '/../env/env.php');
 
+
 try {
-    $pdo = new PDO("mysql:host=localhost; dbname=$dbname", "$username", "$password", [
+    $pdo = new PDO("mysql:host=localhost; dbname=$dbname", $username, $password, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
     ]);
 }

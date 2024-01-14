@@ -1,13 +1,15 @@
 <?php
 
-class GalleryImageModel
-{
-    public  $src;
-    public $title;
+class GalleryImageModel {
 
-    public function __construct(string $src, string $title){
-        $this->title = $title;
+    public string $id;
+    public string $src;
+    public string $title;
+/*
+    public function __construct($id, $src, $title) {
+        $this->id = $id;
         $this->src = $src;
+        $this->title =$title;
     }
-
+*/
 }
